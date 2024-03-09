@@ -26,3 +26,18 @@ string[] FilterStrings(string[] originalArray)
 }
 
 
+// Ввод массива строк
+Console.WriteLine("Введите строки массива через пробел:");
+string input = Console.ReadLine();
+string[] originalArray = input.Split(' ');
+
+// Формирование нового массива строк
+string[] newArray = FilterStrings(originalArray);
+
+// Вывод нового массива строк
+Console.WriteLine("Новый массив строк:");
+foreach (var item in newArray)
+{
+    Console.Write(item + " ");
+}
+System.Console.WriteLine();
